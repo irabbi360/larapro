@@ -8,6 +8,9 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import VueRouter from 'vue-router';
+
+window.Vue.use(VueRouter);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -20,6 +23,18 @@ Vue.component('login', require('./components/Login.vue'));
 Vue.component('register', require('./components/Register.vue'));
 Vue.component('left-sidebar', require('./components/Sidebar.vue'));
 Vue.component('dashboard', require('./components/Dashboard.vue'));
+Vue.component('task', require('./components/Task.vue'));
+Vue.component('profile', require('./components/profile.vue'));
+
+import Example from './components/ExampleComponent.vue';
+const routes = [
+    {
+        path: '/',
+        components: {
+            Example: Example
+        }
+    }
+]
 
 const app = new Vue({
     el: '#app'

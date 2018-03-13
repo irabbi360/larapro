@@ -3,3 +3,5 @@ text file
 Users authentication with Vue.js & Lumen
 
 https://medium.com/codeartisan/users-authentication-with-vue-js-lumen-5e58ec9e6f7e
+
+https://youtu.be/KWamUTxVtS8

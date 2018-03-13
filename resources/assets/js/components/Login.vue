@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <router-link :to="{name: 'Example'}">home</router-link>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
@@ -56,6 +57,7 @@
                 </div>
             </div>
         </div>
+        <router-view></router-view>
     </div>
 </template>
 

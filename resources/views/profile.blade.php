@@ -19,7 +19,7 @@
                     @endif
 
                         @if (Auth::user()->role === 1)
-                            <task></task> <br>
+                            <profile></profile> <br>
                             {{ Auth::user()->mail }}
                             @else
                             Access
